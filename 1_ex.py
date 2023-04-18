@@ -3,10 +3,10 @@
 # вверх одной и той же стороной. Выведите минимальное количество монет, которые нужно перевернуть
 
 
-coin = int(input('Сколько монет лежит на столе? '))
+coin = int(input('Количество монеток на столе = '))
 reverse = 0
 for i in range(coin):
     side = int(input())
     if side == 1:
         reverse += 1
-print(f'Необходимо перевернуть {reverse if reverse<coin/2 else coin-reverse} монеты')
+print(f'Необходимо перевернуть {reverse if reverse<coin/2 else coin-reverse} монет')
